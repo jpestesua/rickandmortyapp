@@ -4,9 +4,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        blue: '#1fb6ff',
-        purple: '#7e5bef',
-        gray: '#8492a6',
+        white: '#E5E5E5',
+      },
+      padding: {
+        screenTop: '55px',
+        screenX: '24px',
       },
       spacing: {
         '2x': '20px',
@@ -16,7 +18,7 @@ module.exports = {
         '4xl': '40px',
       },
       fontFamily: {
-        greycliffcf: ['Fontspring-DEMO-greycliffcf-demiboldoblique'],
+        greycliffcf: ['greycliffcf-bold.otf'],
       },
     },
   },

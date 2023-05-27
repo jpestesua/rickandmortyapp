@@ -8,8 +8,10 @@ const List = () => {
 
   return (
     <SafeAreaInsetWrapper>
-      <View className="items-center justify-center">
-        <Text className="mt-8 text-blue font-bold">this is the list</Text>
+      <View className="px-screenX pt-screenTop">
+        <Text className="font-greycliffcf text-2xl leading-8 mb-6">
+          Rick and Morty list
+        </Text>
         <FlatList
           data={data?.characters?.results}
           renderItem={({item}) => <Text> {item?.name}</Text>}
