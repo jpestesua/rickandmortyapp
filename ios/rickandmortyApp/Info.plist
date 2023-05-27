@@ -53,24 +53,24 @@
 	<false/>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Fontspring-DEMO-greycliffcf-bold.otf</string>
-		<string>Fontspring-DEMO-greycliffcf-boldoblique.otf</string>
-		<string>Fontspring-DEMO-greycliffcf-demibold.otf</string>
-		<string>Fontspring-DEMO-greycliffcf-demiboldoblique.otf</string>
-		<string>Fontspring-DEMO-greycliffcf-extrabold.otf</string>
-		<string>Fontspring-DEMO-greycliffcf-extraboldoblique.otf</string>
-		<string>Fontspring-DEMO-greycliffcf-extralight.otf</string>
-		<string>Fontspring-DEMO-greycliffcf-extralightoblique.otf</string>
-		<string>Fontspring-DEMO-greycliffcf-heavy.otf</string>
-		<string>Fontspring-DEMO-greycliffcf-heavyoblique.otf</string>
-		<string>Fontspring-DEMO-greycliffcf-light.otf</string>
-		<string>Fontspring-DEMO-greycliffcf-lightoblique.otf</string>
-		<string>Fontspring-DEMO-greycliffcf-medium.otf</string>
-		<string>Fontspring-DEMO-greycliffcf-mediumoblique.otf</string>
-		<string>Fontspring-DEMO-greycliffcf-regular.otf</string>
-		<string>Fontspring-DEMO-greycliffcf-regularoblique.otf</string>
-		<string>Fontspring-DEMO-greycliffcf-thin.otf</string>
-		<string>Fontspring-DEMO-greycliffcf-thinoblique.otf</string>
+		<string>greycliffcf-bold.otf</string>
+		<string>greycliffcf-boldoblique.otf</string>
+		<string>greycliffcf-demibold.otf</string>
+		<string>greycliffcf-demiboldoblique.otf</string>
+		<string>greycliffcf-extrabold.otf</string>
+		<string>greycliffcf-extraboldoblique.otf</string>
+		<string>greycliffcf-extralight.otf</string>
+		<string>greycliffcf-extralightoblique.otf</string>
+		<string>greycliffcf-heavy.otf</string>
+		<string>greycliffcf-heavyoblique.otf</string>
+		<string>greycliffcf-light.otf</string>
+		<string>greycliffcf-lightoblique.otf</string>
+		<string>greycliffcf-medium.otf</string>
+		<string>greycliffcf-mediumoblique.otf</string>
+		<string>greycliffcf-regular.otf</string>
+		<string>greycliffcf-regularoblique.otf</string>
+		<string>greycliffcf-thin.otf</string>
+		<string>greycliffcf-thinoblique.otf</string>
 	</array>
 </dict>
 </plist>
