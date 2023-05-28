@@ -1,6 +1,7 @@
 import {useState} from 'react';
 import {MoreOptionsIcons, SearchIcon} from '@src/assets/icons';
 import {
+  Keyboard,
   NativeSyntheticEvent,
   TextInputSubmitEditingEventData,
   View,
@@ -24,6 +25,7 @@ const SearchBar = ({onSearch, onMoreOptions, ...res}: SearchBarProps) => {
   };
 
   const handleSearch = () => {
+    Keyboard.dismiss();
     onSearch(text);
   };
 

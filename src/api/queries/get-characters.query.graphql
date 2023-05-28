@@ -1,22 +1,13 @@
-query GetCharacters {
-  characters {
-    __typename
+query GetCharacters($name: String!) {
+  characters(filter: {name: $name}) {
     results {
       id
       __typename
       name
       image
       species
-      origin {
-        id
-        __typename
-        name
-      }
-      location {
-        id
-        __typename
-        name
-      }
+      status
+      type
     }
   }
 }
