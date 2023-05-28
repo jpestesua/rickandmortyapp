@@ -1,24 +1,36 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./App.{js,jsx,ts,tsx}', './src/screens/**/*.{js,jsx,ts,tsx}'],
+  content: [
+    './App.{js,jsx,ts,tsx}',
+    './src/screens/**/*.{js,jsx,ts,tsx}',
+    './src/components/**/*.{js,jsx,ts,tsx}',
+    './src/layouts/**/*.{js,jsx,ts,tsx}',
+  ],
   theme: {
     extend: {
       colors: {
-        white: '#E5E5E5',
+        white: '#FFFFFF',
+        bgComponent: '#F3F4F6',
+        borderColor: '#E5E7EB',
+        grayText: '#6B7280',
       },
       padding: {
-        screenTop: '55px',
+        screenY: '55px',
         screenX: '24px',
       },
       spacing: {
-        '2x': '20px',
-        '3x': '30px',
+        38: '38px',
+        textComponent: '230px',
+        avatar: '32px',
+        itemListH: '72px',
       },
       borderRadius: {
         '4xl': '40px',
       },
       fontFamily: {
-        greycliffcf: ['greycliffcf-bold.otf'],
+        greycliffcfBold: ['greycliffcf-bold.otf'],
+        greycliffcfSemiBold: ['greycliffcf-demibold.otf'],
+        greycliffcf: ['greycliffcf-regular.otf'],
       },
     },
   },
