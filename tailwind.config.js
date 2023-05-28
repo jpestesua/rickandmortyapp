@@ -11,21 +11,26 @@ module.exports = {
       colors: {
         white: '#FFFFFF',
         bgComponent: '#F3F4F6',
+        borderColor: '#E5E7EB',
+        grayText: '#6B7280',
       },
       padding: {
-        screenTop: '55px',
+        screenY: '55px',
         screenX: '24px',
       },
       spacing: {
         38: '38px',
         textComponent: '230px',
-        '3x': '30px',
+        avatar: '32px',
+        itemListH: '72px',
       },
       borderRadius: {
         '4xl': '40px',
       },
       fontFamily: {
-        greycliffcf: ['greycliffcf-bold.otf'],
+        greycliffcfBold: ['greycliffcf-bold.otf'],
+        greycliffcfSemiBold: ['greycliffcf-demibold.otf'],
+        greycliffcf: ['greycliffcf-regular.otf'],
       },
     },
   },
