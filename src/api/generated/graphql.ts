@@ -205,110 +205,41 @@ export type QueryLocationsByIdsArgs = {
   ids: Array<Scalars['ID']['input']>;
 };
 
-export type GetCharactersQueryVariables = Exact<{[key: string]: never}>;
+export type GetCharactersQueryVariables = Exact<{
+  name: Scalars['String']['input'];
+}>;
 
 export type GetCharactersQuery = {
   __typename?: 'Query';
   characters?: {
-    __typename: 'Characters';
+    __typename?: 'Characters';
     results?: Array<{
       __typename: 'Character';
       id?: string | null;
       name?: string | null;
       image?: string | null;
       species?: string | null;
-      origin?: {
-        __typename: 'Location';
-        id?: string | null;
-        name?: string | null;
-      } | null;
-      location?: {
-        __typename: 'Location';
-        id?: string | null;
-        name?: string | null;
-      } | null;
+      status?: string | null;
+      type?: string | null;
     } | null> | null;
   } | null;
 };
 
-export const GetCharactersDocument = {
-  kind: 'Document',
-  definitions: [
-    {
-      kind: 'OperationDefinition',
-      operation: 'query',
-      name: {kind: 'Name', value: 'GetCharacters'},
-      selectionSet: {
-        kind: 'SelectionSet',
-        selections: [
-          {
-            kind: 'Field',
-            name: {kind: 'Name', value: 'characters'},
-            selectionSet: {
-              kind: 'SelectionSet',
-              selections: [
-                {kind: 'Field', name: {kind: 'Name', value: '__typename'}},
-                {
-                  kind: 'Field',
-                  name: {kind: 'Name', value: 'results'},
-                  selectionSet: {
-                    kind: 'SelectionSet',
-                    selections: [
-                      {kind: 'Field', name: {kind: 'Name', value: 'id'}},
-                      {
-                        kind: 'Field',
-                        name: {kind: 'Name', value: '__typename'},
-                      },
-                      {kind: 'Field', name: {kind: 'Name', value: 'name'}},
-                      {kind: 'Field', name: {kind: 'Name', value: 'image'}},
-                      {kind: 'Field', name: {kind: 'Name', value: 'species'}},
-                      {
-                        kind: 'Field',
-                        name: {kind: 'Name', value: 'origin'},
-                        selectionSet: {
-                          kind: 'SelectionSet',
-                          selections: [
-                            {kind: 'Field', name: {kind: 'Name', value: 'id'}},
-                            {
-                              kind: 'Field',
-                              name: {kind: 'Name', value: '__typename'},
-                            },
-                            {
-                              kind: 'Field',
-                              name: {kind: 'Name', value: 'name'},
-                            },
-                          ],
-                        },
-                      },
-                      {
-                        kind: 'Field',
-                        name: {kind: 'Name', value: 'location'},
-                        selectionSet: {
-                          kind: 'SelectionSet',
-                          selections: [
-                            {kind: 'Field', name: {kind: 'Name', value: 'id'}},
-                            {
-                              kind: 'Field',
-                              name: {kind: 'Name', value: '__typename'},
-                            },
-                            {
-                              kind: 'Field',
-                              name: {kind: 'Name', value: 'name'},
-                            },
-                          ],
-                        },
-                      },
-                    ],
-                  },
-                },
-              ],
-            },
-          },
-        ],
-      },
-    },
-  ],
-} as unknown as DocumentNode<GetCharactersQuery, GetCharactersQueryVariables>;
+export const GetCharactersDocument = gql`
+  query GetCharacters($name: String!) {
+    characters(filter: {name: $name}) {
+      results {
+        id
+        __typename
+        name
+        image
+        species
+        status
+        type
+      }
+    }
+  }
+`;
 
 /**
  * __useGetCharactersQuery__
@@ -322,11 +253,12 @@ export const GetCharactersDocument = {
  * @example
  * const { data, loading, error } = useGetCharactersQuery({
  *   variables: {
+ *      name: // value for 'name'
  *   },
  * });
  */
 export function useGetCharactersQuery(
-  baseOptions?: Apollo.QueryHookOptions<
+  baseOptions: Apollo.QueryHookOptions<
     GetCharactersQuery,
     GetCharactersQueryVariables
   >,

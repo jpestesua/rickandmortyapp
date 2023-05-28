@@ -1,12 +1,7 @@
+import {CharacterModule} from '@src/models/character';
 import {Image, Text, View} from 'react-native';
 
-export interface ItemListProps {
-  image?: string | null;
-  name?: string | null;
-  specie?: string | null;
-}
-
-const ItemList = ({image, name, specie}: ItemListProps) => {
+const ItemList = ({image, name, species}: CharacterModule.Character) => {
   return (
     <View className="h-itemListH items-center border-solid border-t border-borderColor flex-row">
       {image && (
@@ -20,7 +15,7 @@ const ItemList = ({image, name, specie}: ItemListProps) => {
           {name}
         </Text>
         <Text className="font-greycliffcf text-base text-grayText">
-          {specie}
+          {species}
         </Text>
       </View>
     </View>

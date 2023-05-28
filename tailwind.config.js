@@ -5,6 +5,7 @@ module.exports = {
     './src/screens/**/*.{js,jsx,ts,tsx}',
     './src/components/**/*.{js,jsx,ts,tsx}',
     './src/layouts/**/*.{js,jsx,ts,tsx}',
+    './src/assets/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
     extend: {
@@ -22,6 +23,7 @@ module.exports = {
         38: '38px',
         textComponent: '230px',
         avatar: '32px',
+        bigAvatar: '75px',
         itemListH: '72px',
       },
       borderRadius: {
