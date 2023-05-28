@@ -12,8 +12,6 @@ const Details = ({
   const {charter} = route.params as {
     charter: CharacterModule.Character;
   };
-  console.log('props', charter);
-
   const handleOpenDetails = () => {
     navigation.navigate({name: 'List', params: undefined});
   };
